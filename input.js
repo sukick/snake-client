@@ -9,17 +9,17 @@ const setupInput = function(conn){
   return stdin;
 };
  
-const handleUserInput = function(input) {
-    if (input === 'W') {
+const handleUserInput = function(button) {
+    if (button === 'W') {
     connection.write("Move: up");
   } 
-  if (input === 'A') {
+  if (button === 'A') {
     connection.write("Move: left");
   } 
-  if (input === 'S') {
+  if (button === 'S') {
     connection.write("Move: down");
   } 
-  if (input === 'D') {
+  if (button === 'D') {
     connection.write("Move right");
   }
   handleUserInput();
