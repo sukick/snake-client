@@ -9,23 +9,20 @@ const setupInput = function(conn){
   return stdin;
 };
  
-let handleUserInput = function(input) {
+const handleUserInput = function(input) {
     if (input === 'W') {
     connection.write("Move: up");
-
-  } if (input === 'A') {
+  } 
+  if (input === 'A') {
     connection.write("Move: left");
-
-  } if (input === 'S') {
+  } 
+  if (input === 'S') {
     connection.write("Move: down");
-
-  } if (input === 'D') {
+  } 
+  if (input === 'D') {
     connection.write("Move right");
   }
   handleUserInput();
-  return stdin;
 };
 
-module.exports = { 
-  setupInput 
-};
+module.exports = { setupInput };
