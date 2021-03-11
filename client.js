@@ -7,11 +7,11 @@ const connect = function() {
   }, () => { console.log("you ded cuz you idled");
   });
   conn.setEncoding('utf8'); 
-  // when connected to server, print message and name
   conn.on('connect',() => {
     console.log("Sucessfully connected to game server");
-    conn.write("Name:CCK");
+    conn.write("Name: CCK");
   });
+    // conn.write("Move: up");
   return conn;
 };
 
